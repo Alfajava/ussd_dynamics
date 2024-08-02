@@ -81,22 +81,7 @@ app.post('/', async (req, res) => {
             }
 
             var statecode;
-            const state = array[3];
-
-            // State code mapping logic
-           /* const stateCodes = {
-                'Oyo': 'NWAP/OY/', 'OSUN': 'NWAP/OS/', 'ogun': 'NWAP/OG/', 'ondo': 'NWAP/ON/', 'ekiti': 'NWAP/EK/',
-                'EDO': 'NWAP/ED/', 'niger': 'NWAP/NI/', 'Abuja': 'NWAP/FCT/', 'RIVERS': 'NWAP/RIV/', 'adamawa': 'NWAP/AD/',
-                'KOGI': 'NWAP/KG/', 'borno': 'NWAP/BOR/', 'nasarawa': 'NWAP/NAS/', 'enugu': 'NWAP/ENU/', 'plateau': 'NWAP/PLA/',
-                'kaduna': 'NWAP/KAD/', 'kano': 'NWAP/KAN/', 'ebonyi': 'NWAP/EBO/', 'ABIA': 'NWAP/AB/', 'imo': 'NWAP/IM/',
-                'akwa ibom': 'NWAP/AK/', 'cross river': 'NWAP/CR/', 'katsina': 'NWAP/KAT/', 'anambra': 'NWAP/AN/', 'delta': 'NWAP/DE/',
-                'bayelsa': 'NWAP/BA/', 'zamfara': 'NWAP/ZA/', 'kebbi': 'NWAP/KEB/', 'gombe': 'NWAP/GO/', 'kwara': 'NWAP/KW/',
-                'sokoto': 'NWAP/SOK/', 'yobe': 'NWAP/YO/', 'jigawa': 'NWAP/JIG/', 'lagos': 'NWAP/LA/', 'taraba': 'NWAP/TA/',
-                'benue': 'NWAP/BE/'
-            };
-
-            statecode = stateCodes[state.toLowerCase()] || 'NWAP/NG/';*/
-            const state = array[3];
+            const state = array[3];           
 if (state ==='Oyo' || state ==='OYO' || state ==='oyo'){
     statecode = 'NWAP/OY/';
 } else if (state === 'Osun' || state === 'OSUN' || state === 'osun'){
