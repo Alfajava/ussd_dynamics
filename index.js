@@ -84,7 +84,7 @@ app.post('/', async (req, res) => {
             const state = array[3];
 
             // State code mapping logic
-            const stateCodes = {
+           /* const stateCodes = {
                 'Oyo': 'NWAP/OY/', 'OSUN': 'NWAP/OS/', 'ogun': 'NWAP/OG/', 'ondo': 'NWAP/ON/', 'ekiti': 'NWAP/EK/',
                 'EDO': 'NWAP/ED/', 'niger': 'NWAP/NI/', 'Abuja': 'NWAP/FCT/', 'RIVERS': 'NWAP/RIV/', 'adamawa': 'NWAP/AD/',
                 'KOGI': 'NWAP/KG/', 'borno': 'NWAP/BOR/', 'nasarawa': 'NWAP/NAS/', 'enugu': 'NWAP/ENU/', 'plateau': 'NWAP/PLA/',
@@ -95,7 +95,84 @@ app.post('/', async (req, res) => {
                 'benue': 'NWAP/BE/'
             };
 
-            statecode = stateCodes[state.toLowerCase()] || 'NWAP/NG/';
+            statecode = stateCodes[state.toLowerCase()] || 'NWAP/NG/';*/
+            const state = array[3];
+if (state ==='Oyo' || state ==='OYO' || state ==='oyo'){
+    statecode = 'NWAP/OY/';
+} else if (state === 'Osun' || state === 'OSUN' || state === 'osun'){
+    statecode = 'NWAP/OS/';
+} else if (state === 'Ogun' || state === 'OGUN' || state === 'ogun'){
+    statecode = 'NWAP/OG/';
+    } else if (state === 'Ondo' || state === 'ONDO' || state === 'ondo'){
+    statecode = 'NWAP/ON/';
+} else if (state === 'Ekiti' || state === 'EKITI' || state === 'ekiti'){
+    statecode = 'NWAP/EK/';
+} else if (state === 'Edo' || state === 'EDO' || state === 'edo'){
+    statecode = 'NWAP/ED/';
+} else if (state === 'Niger' || state === 'NIGER' || state === 'niger'){
+    statecode = 'NWAP/NI/';
+} else if (state === 'Abuja' || state === 'ABUJA' || state === 'abuja'){
+    statecode = 'NWAP/FCT/';
+} else if (state === 'Rivers' || state === 'RIVERS' || state === 'rivers'){
+    statecode = 'NWAP/RIV/';
+} else if (state === 'Adamawa' || state === 'ADAMAWA' || state === 'adamawa'){
+    statecode = 'NWAP/AD/';
+}else if (state === 'Kogi' || state === 'KOGI' || state === 'kogi'){
+    statecode = 'NWAP/KG/';
+}else if (state === 'BORNO' || state === 'Borno' || state === 'borno'){
+    statecode = 'NWAP/BOR/';
+}else if (state === 'Nasarawa' || state === 'NASARAWA' || state === 'nasarawa'){
+    statecode = 'NWAP/NAS/';
+}else if (state === 'Enugu' || state === 'ENUGU' || state === 'enugu'){
+    statecode = 'NWAP/ENU/';
+} else if (state === 'Plateau' || state === 'PLATEAU' || state == 'plateau'){
+    statecode = 'NWAP/PLA/';
+}else if (state === 'Kaduna' || state === 'KADUNA' || state === 'kaduna'){
+    statecode = 'NWAP/KAD/';
+} else if (state === 'Kano' || state === 'KANO' || state === 'kano'){
+    statecode = 'NWAP/KAN/';
+} else if (state === 'Ebonyi' || state === 'EBONYI' || state === 'ebonyi'){
+    statecode = 'NWAP/EBO/';
+} else if (state === 'Abia' || state === 'ABIA' || state === 'abia'){
+    statecode = 'NWAP/AB/';
+} else if (state === 'IMO' || state === 'Imo' || state === 'imo'){
+    statecode = 'NWAP/IM/';
+} else if (state === 'Akwa Ibom' || state === 'AKWA IBOM' || state === 'AKWA-IBOM' || state === 'Akwa-Ibom' || state === 'AKWAIBOM' || state === 'Akwaibom' || state === 'akwaibom' || state === 'akwa ibom' || state === 'akwa-ibom'){
+    statecode = 'NWAP/AK/';
+} else if (state === 'Cross River' || state === 'CROSS RIVER' || state === 'CROSSRIVER' || state === 'Crossriver' || state === 'CROSS-RIVER' || state === 'Cross-River' || state === 'cross-river'){
+    statecode = 'NWAP/CR/';
+} else if (state == 'Katsina' || state === 'KATSINA' || state === 'katsina') {
+    statecode = 'NWAP/KAT/';
+} else if (state === 'Anambra' || state === 'ANAMBRA' || state === 'anambra'){
+    statecode = 'NWAP/AN/';
+} else if (state === 'DELTA' || state === 'Delta' || state === 'delta'){
+    statecode = 'NWAP/DE/';
+} else if (state === 'Bayelsa' || state === 'BAYELSA' || state === 'bayelsa'){
+    statecode = 'NWAP/BA/';
+} else if (state === 'Zamfara' || state === 'ZAMFARA' || state === 'Zamfara'){
+    statecode = 'NWAP/ZA/';
+} else if (state === 'KEBBI' || state === 'Kebbi' || state === 'kebbi'){
+    statecode = 'NWAP/KEB/';
+} else if (state === 'Gombe' || state === 'GOMBE' || state === 'gombe'){
+    statecode = 'NWAP/GO/';
+} else if (state === 'Kwara' || state === 'KWARA' || state === 'kwara'){
+    statecode = 'NWAP/KW/';
+} else if (state === 'Sokoto' || state === 'SOKOTO' || state === 'sokoto'){
+    statecode = 'NWAP/SOK/';
+} else if (state === 'Yobe' || state === 'YOBE' || state === 'yobe'){
+    statecode = 'NWAP/YO/';
+} else if (state === 'Jigawa' || state === 'JIGAWA' || state === 'jigawa'){
+    statecode = 'NWAP/JIG/';
+} else if (state === 'Lagos' || state === 'LAGOS' || state === 'lagos'){
+    statecode = 'NWAP/LA/';
+} else if (state === 'Taraba' || state === 'TARABA' || state === 'taraba'){
+    statecode = 'NWAP/TA/';
+} else if (state === 'Benue' || state === 'BENUE' || state === 'benue'){
+    statecode = 'NWAP/BE/';
+}else {
+    statecode = 'NWAP/NG/';
+
+}
 
             const nwap_id = statecode + between(1, 20000);
 
